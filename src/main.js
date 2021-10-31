@@ -8,6 +8,8 @@ import share from "./utils/share";
 import { Toast, Dialog, ImagePreview } from "vant";
 import ViewUI from 'view-design';
 import 'view-design/dist/styles/iview.css';
+import * as echarts from 'echarts'
+
 Vue.use(Toast);
 Vue.use(ImagePreview)
 Vue.use(ViewUI);
@@ -18,6 +20,7 @@ Vue.prototype.$store = store;
 Vue.config.productionTip = false;
 Vue.prototype.$toast = Toast;
 Vue.prototype.$ImagePreview = ImagePreview;
+Vue.prototype.$echarts = echarts
 new Vue({
     router,
     store,
